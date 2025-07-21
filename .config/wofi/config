@@ -1,0 +1,14 @@
+normal_window=true
+allow_images=true
+allow_markup=true
+hide_scroll=true
+insensitive=true
+show_all=false
+gtk_dark=true
+term=kitty
+height=40%
+columns=2
+show=drun
+mode=show
+width=40%
+prompt=

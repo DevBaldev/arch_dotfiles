@@ -1,0 +1,11 @@
+alias cd "z"
+alias cat "bat"
+
+alias mv "uu-mv"
+alias cp "uu-cp"
+alias rm "uu-rm"
+alias mkdir "uu-mkdir"
+alias chmod "uu-chmod"
+alias chown "uu-chown"
+alias chgrp "uu-chgrp"
+alias touch "uu-touch"
