@@ -13,7 +13,7 @@ export GDK_BACKEND="wayland"
 export SHELL=/usr/bin/fish
 export TERM=/usr/bin/kitty
 export EDITOR=/usr/bin/nvim
-export BROWSER=/usr/bin/vivaldi
+export BROWSER=/usr/bin/librewolf
 
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
