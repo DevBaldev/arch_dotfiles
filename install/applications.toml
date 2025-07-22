@@ -1,0 +1,11 @@
+# all packages witch are need to be installed
+amd = "mesa vulkan-radeon"
+fonts = "noto-fonts-{cjk,emoji,extra} ttf-cascadia-code-nerd"
+rusty = "rust{,-analyzer} uutils-coreutils lsd bat zoxide ripgrep"
+yazi = "yazi ffmpeg 7zip jq poppler fd fzf imagemagick"
+theme = "qt{5,6} nwg-look kvantum{,-qt5}"
+desktop = "hypr{land,paper,polkitagent} waybar mako kitty uwsm wofi"
+media = "mpv yt-dlp zathura-{cb,pdf-mupdf} obsidian spotify-launcher"
+lsps = "{lua,bash}-language-server pyright clang vscode-{css,html}-languageserver marksman"
+formators = "stylua shfmt python-{black,isort} prettier"
+aurs = "wofi-emoji ani-cli librewolf-bin"
