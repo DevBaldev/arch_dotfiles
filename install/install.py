@@ -47,7 +47,8 @@ def change_shell() -> None:
 
 def dotfiles_copy() -> None:
     """Copy every dotfiles to user's home."""
-    os.system("cp -r ../.* ~/")
+    os.system("sudo rm -r ../.git")  # Remove .git
+    os.system("cp -r ../.* ~/")  # Copy all dotfiles
 
 
 if __name__ == "__main__":
