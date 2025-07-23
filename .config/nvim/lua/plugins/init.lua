@@ -30,6 +30,7 @@ return {
         "rust",
         "fish",
         "bash",
+        "toml",
         "python",
         "html",
         "css",

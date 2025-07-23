@@ -1,12 +1,11 @@
-"$schema" = 'https://starship.rs/config-schema.json'
-
+"$schema" = "https://starship.rs/config-schema.json"
 palette = "catppuccin_mocha"
 
 # Starship modules
 [character]
 success_symbol = "[[󰄛](green) ❯](peach)"
 error_symbol = "[[󰄛](red) ❯](peach)"
-vimcmd_symbol = "[󰄛 ❮](subtext1)" # For use with zsh-vi-mode
+vimcmd_symbol = "[󰄛 ❮](subtext1)"  # For use with zsh-vi-mode
 
 # Palette definitions
 [palettes.catppuccin_mocha]

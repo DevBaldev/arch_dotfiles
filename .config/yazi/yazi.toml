@@ -1,32 +1,32 @@
 [mgr]
-ratio          = [ 0, 5, 3 ]
-sort_by        = "alphabetical"
-show_hidden    = false
-show_symlink   = true
-scrolloff      = 5
+ratio = [0, 5, 3]
+sort_by = "alphabetical"
+show_hidden = false
+show_symlink = true
+scrolloff = 5
 
 [opener]
 imv = [
-    { run = 'imv "$@"', orphan = true, for = "unix" },
+  { run = 'imv "$@"', orphan = true, for = "unix" },
 ]
 edit = [
-    { run = 'nvim "$@"', block = true, for = "unix" },
+  { run = 'nvim "$@"', block = true, for = "unix" },
 ]
 play = [
-    { run = 'mpv "$@"', orphan = true, for = "unix" },
+  { run = 'mpv "$@"', orphan = true, for = "unix" },
 ]
 zathura = [
-    { run = 'zathura "$@"', orphan = true, for = "unix" },
+  { run = 'zathura "$@"', orphan = true, for = "unix" },
 ]
 
 [open]
 prepend_rules = [
-    { name = "*.png", use = "imv" },
-    { name = "*.jpg", use = "imv" },
-    { name = "*.gif", use = "play" },
-    { name = "*.mp4", use = "play" },
-    { name = "*.mpv", use = "play" },
-    { name = "*.cbz", use = "zathura" },
-    { name = "*.pdf", use = "zathura" },
-    { name = "*.epub", use = "zathura" },
+  { name = "*.png", use = "imv" },
+  { name = "*.jpg", use = "imv" },
+  { name = "*.gif", use = "play" },
+  { name = "*.mp4", use = "play" },
+  { name = "*.mpv", use = "play" },
+  { name = "*.cbz", use = "zathura" },
+  { name = "*.pdf", use = "zathura" },
+  { name = "*.epub", use = "zathura" },
 ]
