@@ -20,8 +20,7 @@ def sys_update() -> None:
 
 def paru_install() -> None:
     """Installing aur helper (paru)."""
-    os.system(
-        "git clone https://aur.archlinux.org/paru.git")  # Clone paru repo
+    os.system("git clone https://aur.archlinux.org/paru.git")  # Clone paru repo
     os.system("cd paru; makepkg -si")  # Makeing the pkg
     os.system("sudo rm -r paru")  # removing paru repo
 
