@@ -1,17 +1,18 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    bash = { "shfmt" },
 
-    css = { "prettier" },
-    html = { "prettier" },
-    markdown = { "prettier" },
+    bash = { "shfmt" },
 
     c = { "clang-format" },
     cpp = { "clang-format" },
 
     toml = { "tombi" },
-    python = { "yapf" },
+    python = { "ruff format" },
+
+    css = { "prettier" },
+    html = { "prettier" },
+    markdown = { "prettier" },
   },
 
   format_on_save = {
