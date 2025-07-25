@@ -71,7 +71,7 @@ change_shell() {
 # Function to copy dotfiles to the user's home
 dotfiles_copy() {
   echo "Copying dotfiles to home directory..."
-  sudo rm -rf ../.git # Remove .git
+  sudo rm -rf ./.git # Remove .git
   cp -r ./.* ~/      # Copy all dotfiles
 }
 
