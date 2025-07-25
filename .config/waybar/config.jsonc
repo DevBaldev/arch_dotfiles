@@ -70,7 +70,7 @@
       "headphone": "",
       "default": [" ", " ", " "]
     },
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol-qt"
   },
   "custom/sep": {
     "format": "|",

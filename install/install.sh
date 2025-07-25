@@ -19,25 +19,41 @@ paru_install() {
 # Function to install packages
 pkgs_install() {
   echo "Installing applications..."
+
   # System
   paru -Sy --needed mesa vulkan-radeon
+
+  # Audio
+  paru -Sy --needed pipewire pipewire-alsa pipewire-pulse pipewire-jack \
+    pavucontrol-qt bluez bluez-tools blueman
+
   # Fonts
-  paru -Sy --needed noto-fonts-{cjk,emoji,extra} ttf-cascadia-code-nerd
-  # Rusty
-  paru -Sy --needed rust{,-analyzer} uutils-coreutils lsd bat zoxide ripgrep dua-cli
-  # Yazi
-  paru -Sy --needed yazi ffmpeg 7zip jq poppler fd fzf imagemagick
-  # Theme
-  paru -Sy --needed qt{5,6} nwg-look kvantum{,-qt5}
-  paru -R qt{5,6}-tools
+  paru -Sy --needed noto-fonts-cjk noto-fonts-emoji noto-fonts-extra \
+    ttf-cascadia-code-nerd ttf-jetbrains-mono-nerd
+
+  # CLI Tools
+  paru -Sy --needed rust uutils-coreutils lsd bat zoxide ripgrep \
+    dua-cli yazi ffmpeg 7zip jq poppler fd fzf imagemagick btop
+
+  # UI/Theme
+  paru -Sy --needed qt5 qt6 nwg-look kvantum kvantum-qt5
+  paru -R qt5-tools qt6-tools
+
   # Desktop
-  paru -Sy --needed hypr{land,paper,polkitagent} waybar mako kitty uwsm wofi
+  paru -Sy --needed hyprland hyprpaper hyprpolkitagent waybar mako \
+    kitty uwsm wofi
   # Media
-  paru -Sy --needed imv mpv yt-dlp zathura-{cb,pdf-mupdf} obsidian spotify-launcher
+  paru -Sy --needed imv mpv yt-dlp zathura-cb zathura-pdf-mupdf \
+    obsidian spotify-launcher
+
   # LSP
-  paru -Sy --needed {lua,bash}-language-server tombi pyright clang vscode-{css,html}-languageserver marksman
+  paru -Sy --needed lua-language-server bash-language-server tombi pyright \
+    clang vscode-css-languageserver vscode-html-languageservermarksman \
+    rust-analyzer
+
   # Formator
   paru -Sy --needed stylua shfmt ruff prettier
+
   # Aur
   paru -Sy --needed wofi-emoji ani-cli librewolf-bin
 }
