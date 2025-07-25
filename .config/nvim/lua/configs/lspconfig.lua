@@ -1,17 +1,9 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local servers = {
-  "bashls",
-
-  "clangd",
-
   "tombi",
   "ruff",
-  "pyright",
-
-  "html",
-  "cssls",
-  "marksman",
+  "pylsp",
 }
 
 vim.lsp.enable(servers)

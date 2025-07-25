@@ -14,8 +14,8 @@ return {
 
   {
     "mrcjkb/rustaceanvim",
-    version = "^6", -- Recommended
-    lazy = false, -- This plugin is already lazy
+    version = "^6",
+    lazy = false,
   },
 
   {
@@ -23,18 +23,13 @@ return {
     opts = {
       ensure_installed = {
         "vim",
-        "lua",
         "vimdoc",
-        "c",
-        "cpp",
+        "lua",
         "rust",
         "fish",
         "bash",
         "toml",
         "python",
-        "html",
-        "css",
-        "markdown",
       },
     },
   },

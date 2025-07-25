@@ -23,8 +23,11 @@ pkgs_install() {
   # System
   paru -Sy --needed mesa vulkan-radeon
 
+  # Network
+  paru -Sy --needed network-manager-applet
+
   # Audio
-  paru -Sy --needed pipewire pipewire-alsa pipewire-pulse pipewire-jack \
+  paru -Sy --needed pipewire pipewire-pulse wireplumber pipewire-jack \
     pavucontrol-qt bluez bluez-tools blueman
 
   # Fonts
@@ -46,13 +49,9 @@ pkgs_install() {
   paru -Sy --needed imv mpv yt-dlp zathura-cb zathura-pdf-mupdf \
     obsidian spotify-launcher
 
-  # LSP
-  paru -Sy --needed lua-language-server bash-language-server tombi pyright \
-    clang vscode-css-languageserver vscode-html-languageservermarksman \
-    rust-analyzer
-
-  # Formator
-  paru -Sy --needed stylua shfmt ruff prettier
+  # LSP/Formator
+  paru -Sy --needed lua-language-server tombi python-lsp-server \
+    rust-analyzer stylua ruff
 
   # Aur
   paru -Sy --needed wofi-emoji ani-cli librewolf-bin
@@ -69,7 +68,7 @@ change_shell() {
 dotfiles_copy() {
   echo "Copying dotfiles to home directory..."
   sudo rm -rf ../.git # Remove .git
-  cp -r ../.* ~/      # Copy all dotfiles
+  cp -r ./.* ~/      # Copy all dotfiles
 }
 
 # Main function to call all relevant functions

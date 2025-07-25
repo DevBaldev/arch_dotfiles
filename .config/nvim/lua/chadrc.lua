@@ -1,4 +1,3 @@
----@type ChadrcConfig
 local M = {}
 
 M.base46 = {
@@ -12,12 +11,12 @@ M.base46 = {
 
 M.ui = {
   tabufline = {
-    lazyload = false,
+    lazyload = true,
   },
   statusline = {
     enabled = true,
-    theme = "vscode", -- default/vscode/vscode_colored/minimal
-    separator_style = "default", -- default/round/block/arrow
+    theme = "default", -- default/vscode/vscode_colored/minimal
+    separator_style = "round", -- default/round/block/arrow
   },
 }
 
