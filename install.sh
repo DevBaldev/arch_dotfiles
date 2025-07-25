@@ -6,6 +6,7 @@ sys_update() {
   sudo pacman -Syu
 }
 
+
 # Function to install paru
 paru_install() {
   echo "Installing paru..."
@@ -15,6 +16,7 @@ paru_install() {
   cd .. || exit
   sudo rm -rf paru
 }
+
 
 # Function to install packages
 pkgs_install() {
@@ -57,6 +59,7 @@ pkgs_install() {
   paru -Sy --needed wofi-emoji ani-cli librewolf-bin
 }
 
+
 # Function to change the default shell to fish
 change_shell() {
   echo "Changing default shell to fish..."
@@ -64,12 +67,14 @@ change_shell() {
   chsh -s "$(which fish)"
 }
 
+
 # Function to copy dotfiles to the user's home
 dotfiles_copy() {
   echo "Copying dotfiles to home directory..."
   sudo rm -rf ../.git # Remove .git
   cp -r ./.* ~/      # Copy all dotfiles
 }
+
 
 # Main function to call all relevant functions
 main() {
@@ -79,6 +84,7 @@ main() {
   change_shell
   dotfiles_copy
 }
+
 
 # Execute the main function
 main
