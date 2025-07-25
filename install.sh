@@ -46,7 +46,7 @@ pkgs_install() {
 
   # Desktop
   paru -Sy --needed hyprland hyprpaper hyprpolkitagent waybar mako \
-    kitty uwsm wofi
+    kitty wofi
   # Media
   paru -Sy --needed imv mpv yt-dlp zathura-cb zathura-pdf-mupdf \
     obsidian spotify-launcher
