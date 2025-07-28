@@ -25,38 +25,39 @@ pkgs_install() {
   # System
   paru -Sy --needed mesa vulkan-radeon
 
-  # Network
-  paru -Sy --needed network-manager-applet
-
   # Audio
-  paru -Sy --needed pipewire pipewire-pulse wireplumber pipewire-jack \
-    pavucontrol-qt bluez bluez-tools blueman
+  paru -Sy --needed pipewire{,-{pulse,jack}} wireplumber
 
   # Fonts
-  paru -Sy --needed noto-fonts-cjk noto-fonts-emoji noto-fonts-extra \
-    ttf-cascadia-code-nerd ttf-jetbrains-mono-nerd
-
-  # CLI Tools
-  paru -Sy --needed rust uutils-coreutils lsd bat zoxide ripgrep \
-    dua-cli yazi ffmpeg 7zip jq poppler fd fzf imagemagick btop
-
-  # UI/Theme
-  paru -Sy --needed qt5 qt6 nwg-look kvantum kvantum-qt5
-  paru -R qt5-tools qt6-tools
+  paru -Sy --needed noto-fonts-{cjk,emoji,extra} ttf-{cascadia-code,jetbrains-mono}-nerd
 
   # Desktop
-  paru -Sy --needed hyprland hyprpaper hyprpolkitagent waybar mako \
-    kitty wofi
+  paru -Sy --needed hypr{land,paper,polkitagent} waybar mako kitty wofi
+
+  # UI/Theme tools
+  paru -Sy --needed qt{5,6} nwg-look kvantum{,-qt5} qt6ct
+  paru -R qt{5,6}-tools
+
+  # CLI Tools
+  paru -Sy --needed rust uutils-coreutils lsd bat zoxide ripgrep dua-cli yazi ffmpeg 7zip jq poppler fd fzf imagemagick btop
+
   # Media
-  paru -Sy --needed imv mpv yt-dlp zathura-cb zathura-pdf-mupdf \
-    obsidian spotify-launcher
+  paru -Sy --needed imv mpv yt-dlp zathura-{cb,pdf-mupdf} 
 
   # LSP/Formator
-  paru -Sy --needed lua-language-server tombi python-lsp-server \
-    rust-analyzer stylua ruff
+  paru -Sy --needed {lua-language,python-lsp}-server tombi rust-analyzer stylua ruff
+
+  # Network/Bluetooth
+  paru -Sy --needed network-manager-applet blueman pavucontrol-qt bluez{,-tools}
+
+  # NOT FOSS
+  oparu -Sy --needed bsidian spotify-launcher
 
   # Aur
-  paru -Sy --needed wofi-emoji ani-cli librewolf-bin
+  paru -Sy --needed wofi-emoji ani-cli {librewolf,freetube}-bin
+
+  # themes
+  paru -Sy --needed catppuccin-gtk-theme-mocha tela-circle-icon-theme-dracula bibata-cursor-theme-bin
 }
 
 
