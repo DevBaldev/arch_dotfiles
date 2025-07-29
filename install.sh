@@ -32,7 +32,7 @@ pkgs_install() {
   paru -Sy --needed noto-fonts-{cjk,emoji,extra} ttf-{cascadia-code,jetbrains-mono}-nerd
 
   # Desktop
-  paru -Sy --needed hypr{land,paper,polkitagent} waybar mako kitty wofi
+  paru -Sy --needed hypr{land,paper,polkitagent} waybar mako ghostty wofi
 
   # UI/Theme tools
   paru -Sy --needed qt{5,6} nwg-look kvantum{,-qt5} qt6ct
