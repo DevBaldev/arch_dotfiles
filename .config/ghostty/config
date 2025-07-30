@@ -1,4 +1,6 @@
 font-size = 14
+window-vsync = true
+resize-overlay = never
 theme = catppuccin-mocha.conf
 window-padding-balance = true
 font-family = CaskaydiaCove Nerd Font
