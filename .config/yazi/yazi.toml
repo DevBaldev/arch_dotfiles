@@ -9,9 +9,6 @@ scrolloff = 5
 imv = [
   { run = 'imv "$@"', orphan = true, for = "unix" },
 ]
-edit = [
-  { run = 'nvim "$@"', block = true, for = "unix" },
-]
 play = [
   { run = 'mpv "$@"', orphan = true, for = "unix" },
 ]
