@@ -1,9 +1,15 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local servers = {
-  "tombi",
+  "bashls",
+
   "ruff",
   "pylsp",
+
+  "marksman",
+
+  "tombi",
+  "rust_analyzer",
 }
 
 vim.lsp.enable(servers)

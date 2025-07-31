@@ -11,6 +11,6 @@ export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
 export GDK_BACKEND="wayland"
 
 export SHELL=/usr/bin/fish
-export TERM=/usr/bin/kitty
 export EDITOR=/usr/bin/nvim
+export TERM=/usr/bin/ghostty
 export BROWSER=/usr/bin/librewolf

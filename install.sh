@@ -45,11 +45,11 @@ dotfiles_copy() {
 }
 
 main() {
-  # sys_update
-  # paru_install
+  sys_update
+  paru_install
   pkgs_install
-  # change_shell
-  # dotfiles_copy
+  change_shell
+  dotfiles_copy
 }
 
 main
