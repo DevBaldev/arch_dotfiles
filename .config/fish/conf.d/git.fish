@@ -1,2 +1,3 @@
+abbr --add git "gix"
 # Git actions abbreviation
-abbr --add gb "git add -A; and git commit -am (date +'%d/%m/%y %H:%M'); and git push"
+abbr --add gb "gix add -A; and gix commit -am (date +'%d/%m/%y %H:%M'); and gix push"
